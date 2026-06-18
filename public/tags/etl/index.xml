@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ETL on Mwai Michael: Data Engineering Project</title>
+    <link>http://localhost:1313/tags/etl/</link>
+    <description>Recent content in ETL on Mwai Michael: Data Engineering Project</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/etl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Real-Time Weather Telemetry Streaming Pipeline</title>
+      <link>http://localhost:1313/posts/weather-telemetry-streaming/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/weather-telemetry-streaming/</guid>
+      <description>An end-to-end data pipeline streaming real-time weather metrics through a containerized Kafka cluster to a custom analytical GUI dashboard.</description>
+    </item>
+  </channel>
+</rss>

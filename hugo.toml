@@ -1,0 +1,7 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'Mwai Michael: Data Engineering Project'
+theme = 'PaperMod'
+
+[params]
+    homeInfoParams = { title = "Hi, I'm Michael 👋", content = "I'm a Data Engineer passionate about building scalable streaming architectures, real-time telemetry, and automated ETL pipelines. Proficient in Python, SQL, R, Pandas and Numpy. I clean clean large datasets and plumb them between systems. I work with PostgreSQL, MySQL, Azure Blob and AWS S3 for data storage. With a Biochemistry and Bioinformatics background, I bring a wealth of problem-solving skills honed through analysis of large biological data and efficient structuring of the data to ensure quick, reliable, resilient, consistent storage and access. This scientific foundation complements my data-driven approach and continuous learning mindset. I am adaptable, eager to contribute to innovative projects. I am fluent in English, Kiswahili and French."}
