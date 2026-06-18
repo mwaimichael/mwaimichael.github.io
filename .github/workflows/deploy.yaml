@@ -37,7 +37,7 @@ jobs:
           sudo mv hugo /usr/local/bin/
 
       - name: Build Site
-        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo --minify --baseURL "https://mwaimichael.github.io/"  #hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
