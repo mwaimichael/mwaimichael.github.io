@@ -1,7 +1,69 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://mwaimichael.github.io/'
 locale = 'en-us'
-title = 'Mwai Michael: Data Engineering Project'
+title = 'Professional Portfolio'
 theme = 'PaperMod'
+favicon = "portfolio.png"
+
+[[menu.main]]
+    identifier = "About Me"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "Projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 20
+
+[[menu.main]]
+    identifier = "Curriculum Vitae"
+    name = "CV"
+    url = "Michael_Mwai_CV.pdf"
+    weight = 30
+
 
 [params]
-    homeInfoParams = { title = "Hi, I'm Michael 👋", content = "I'm a Data Engineer passionate about building scalable streaming architectures, real-time telemetry, and automated ETL pipelines. Proficient in Python, SQL, R, Pandas and Numpy. I clean clean large datasets and plumb them between systems. I work with PostgreSQL, MySQL, Azure Blob and AWS S3 for data storage. With a Biochemistry and Bioinformatics background, I bring a wealth of problem-solving skills honed through analysis of large biological data and efficient structuring of the data to ensure quick, reliable, resilient, consistent storage and access. This scientific foundation complements my data-driven approach and continuous learning mindset. I am adaptable, eager to contribute to innovative projects. I am fluent in English, Kiswahili and French."}
+    showRecentPosts = true
+
+[params.profileMode]
+    enabled = true
+    title = "Michael Mwai"
+    subtitle = "Data Engineer\nBuilding high-throughput, reliable data systems.\n Specialist in designing real-time streaming architectures, distributed computing layers, and automated analytics infrastructure.\n\n**Core Stack:** Apache Kafka • Apache Airflow • PySpark • PostgreSQL • Linux SysAdmin"
+    imageUrl = "michael.jpg"
+    imageWidth = 120
+    imageHeight = 120
+    imageTitle = "Michael Mwai"
+
+[[params.profileMode.buttons]]
+    name = "About me"
+    url = "/about/"
+
+[[params.profileMode.buttons]]
+    name = "Resume"
+
+[[params.profileMode.buttons]]
+    name = "Projects"
+    url = "/projects/"
+
+
+[[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/michael-mwai-3a6647415"
+
+[[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/mwaimichael"
+
+[[params.socialIcons]]
+    name = "email"
+    url = "mailto:michael.k.mwai@gmail.com"
+
+[[params.socialIcons]]
+    name = "professional blog"
+    url = "https://dev.to/michaelmwai"
+
+
+[params.homeInfoParams]
+    title = "Hi, I'm Michael 👋"
+    content = """I'm a Data Engineer passionate about building scalable streaming architectures, real-time telemetry, and automated ETL pipelines. Proficient in Python, SQL, R, Pandas and Numpy. I clean clean large datasets and plumb them between systems. I work with PostgreSQL, MySQL, Azure Blob and AWS S3 for data storage. With a Biochemistry and Bioinformatics background, I bring a wealth of problem-solving skills honed through analysis of large biological data and efficient structuring of the data to ensure quick, reliable, resilient, consistent storage and access. This scientific foundation complements my data-driven approach and continuous learning mindset. I am adaptable, eager to contribute to innovative projects. I am fluent in English, Kiswahili and French."""

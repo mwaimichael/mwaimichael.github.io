@@ -1,0 +1,52 @@
+<div style="margin-top: 2.5rem;">
+    <h2 style="margin-bottom: 1rem; text-align: left; font-size: 1.5rem; color: var(--primary);">📌 Active Engineering Repositories</h2>
+    <div id="github-repo-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem;">
+        <p id="repo-loading" style="opacity: 0.6; font-size: 0.9rem; text-align: left;">Querying GitHub API for active pipelines...</p>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Fetch public repositories sorted by recent activity
+        fetch('https://api.github.com/users/mwaimichael/repos?sort=updated&per_page=6')
+        .then(response => response.json())
+        .then(repos => {
+            const grid = document.getElementById('github-repo-grid');
+            grid.innerHTML = ''; 
+            
+            repos.forEach(repo => {
+                const repoName = repo.name.toLowerCase();
+                
+                // CRITICAL FILTER: Skip the profile README repo and the portfolio deployment codebase
+                if (repoName === "mwaimichael" || repoName === "mwaimichael.github.io") {
+                    return; // Skip this iteration entirely
+                }
+
+                const card = document.createElement('a');
+                card.href = repo.html_url;
+                card.target = "_blank";
+                card.style.textDecoration = "none";
+                card.style.color = "inherit";
+                
+                card.innerHTML = `
+                    <div style="border: 1px solid var(--border); padding: 1.2rem; border-radius: 8px; background: var(--code-bg); height: 100%; transition: transform 0.2s ease; text-align: left;">
+                        <h3 style="margin: 0 0 0.5rem 0; color: var(--primary); font-size: 1.1rem; font-weight: 600;">📦 ${repo.name}</h3>
+                        <p style="font-size: 0.85rem; margin: 0 0 1rem 0; opacity: 0.8; line-height: 1.4; min-height: 40px;">
+                            ${repo.description || 'No descriptive overview provided yet.'}
+                        </p>
+                        <div style="font-size: 0.8rem; display: flex; gap: 1rem; opacity: 0.6; font-family: monospace;">
+                            <span>⭐ ${repo.stargazers_count}</span>
+                            <span>🍴 ${repo.forks_count}</span>
+                            ${repo.language ? `<span>🔹 ${repo.language}</span>` : ''}
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        })
+        .catch(err => {
+            document.getElementById('repo-loading').innerText = "Failed to load live data arrays.";
+            console.error(err);
+        });
+    });
+</script>

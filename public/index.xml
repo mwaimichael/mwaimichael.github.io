@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Mwai Michael: Data Engineering Project</title>
+    <title>Professional Portfolio</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Mwai Michael: Data Engineering Project</description>
+    <description>Recent content on Professional Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Real-Time Weather Telemetry Streaming Pipeline</title>
-      <link>http://localhost:1313/posts/weather-telemetry-streaming/</link>
-      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/weather-telemetry-streaming/</guid>
-      <description>An end-to-end data pipeline streaming real-time weather metrics through a containerized Kafka cluster to a custom analytical GUI dashboard.</description>
+      <title>About Me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;I am a multi-disciplinary engineer and analyst specializing in the design, optimization, and administration of scalable data infrastructure. Holding degrees spanning &lt;strong&gt;Computer Science&lt;/strong&gt;, &lt;strong&gt;Biochemistry&lt;/strong&gt;, and &lt;strong&gt;Commerce&lt;/strong&gt;, alongside advanced qualifications in accounting (&lt;strong&gt;CPA&lt;/strong&gt;), I approach data challenges with a unique dual lens: rigorous technical engineering combined with a deep understanding of corporate and financial workflows.&lt;/p&gt;
+&lt;p&gt;My engineering philosophy centers on building &lt;strong&gt;idempotent, resilient, and self-healing data systems&lt;/strong&gt;. I focus on transforming raw, unorganized data streams into highly optimized, production-ready storage architectures that drive reliable business intelligence and automated decision-making.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
